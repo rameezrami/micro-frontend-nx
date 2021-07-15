@@ -1,0 +1,12 @@
+<button (click)="test()" mat-raised-button color="primary">click here</button>
+
+<ul *ngFor="let note of notes; index as i; first as isFirst">
+    <li><strong>id:{{note.id}}</strong></li>
+    <li>name:{{note.name}}</li>
+    <li>full_name:{{note.full_name}}</li>
+    <li>description:{{note.description}}</li>
+    <li>created_at:{{note.created_at}}</li>
+    <li>size:{{note.size}}</li>
+    <li>url:{{note.url}}</li>
+    <li><hr></li>
+</ul>
